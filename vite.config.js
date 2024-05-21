@@ -8,7 +8,7 @@ export default defineConfig({
   server:{
   proxy:{
     '/socket.io':{
-      target:'http://localhost:3000',
+      target:'https://franalfaro.ddns.net/serverTicket',
       ws:true
     }
   }
