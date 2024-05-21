@@ -23,7 +23,7 @@ export const Escritorio = () => {
 
   const salir = () => {
     localStorage.clear()
-    navigate('/ingresar')
+    navigate('/TicketApp/ingresar')
    
   }
 
@@ -36,7 +36,7 @@ export const Escritorio = () => {
   }
 
   if(!usuario.agente || !usuario.escritorio){
-    navigate('/ingresar')
+    navigate('/TicketApp/ingresar')
     
 }
   return (
