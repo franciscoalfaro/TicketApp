@@ -1,7 +1,7 @@
 
 export const getUltimos = async()=>{
 
-    const resp = await fetch('http://localhost:3000/ultimos')
+    const resp = await fetch('https://franalfaro.ddns.net/ultimos')
  
 
     const data = await resp.json()

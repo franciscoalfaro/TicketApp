@@ -26,13 +26,13 @@ export const RouterPage = () => {
                     <div className="demo-logo-vertical"></div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1" icon={<UserOutlined />}>
-                            <Link to="/TicketApp/ingresar">Ingresar</Link>
+                            <Link to="/ingresar">Ingresar</Link>
                         </Menu.Item>
                         <Menu.Item key="2" icon={<UploadOutlined />}>
-                            <Link to="/TicketApp/crear">Crear Ticket</Link>
+                            <Link to="/crear">Crear Ticket</Link>
                         </Menu.Item>
                         <Menu.Item key="3" icon={<VideoCameraOutlined />}>
-                            <Link to="/TicketApp/cola">Cola Ticket</Link>
+                            <Link to="/cola">Cola Ticket</Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>
@@ -41,13 +41,13 @@ export const RouterPage = () => {
                         <div style={{ padding: 24, minHeight: 360, background: colorBgContainer }}>
                             {/* The components specified in the Route elements will be rendered based on the current route */}
                             <Routes>
-                                <Route path="/TicketApp/ingresar" element={<Ingresar />} />
-                                <Route path="/TicketApp/cola" element={<Cola />} />
-                                <Route path="/TicketApp/crear" element={<CrearTicket />} />
-                                <Route path="/TicketApp/escritorio" element={<Escritorio />} />
+                                <Route path="/ingresar" element={<Ingresar />} />
+                                <Route path="/cola" element={<Cola />} />
+                                <Route path="/crear" element={<CrearTicket />} />
+                                <Route path="/escritorio" element={<Escritorio />} />
 
                                 {/* Redirect to "/ingresar" if no route matches */}
-                                <Route path="/" element={<Navigate to="/TicketApp/ingresar" />} />
+                                <Route path="/" element={<Navigate to="/ingresar" />} />
                             </Routes>
                         </div>
                     </Content>
