@@ -41,10 +41,10 @@ export const RouterPage = () => {
                         <div style={{ padding: 24, minHeight: 360, background: colorBgContainer }}>
                             {/* The components specified in the Route elements will be rendered based on the current route */}
                             <Routes>
-                                <Route path="TicketApp/ingresar" element={<Ingresar />} />
-                                <Route path="TicketApp/cola" element={<Cola />} />
-                                <Route path="TicketApp/crear" element={<CrearTicket />} />
-                                <Route path="TicketApp/escritorio" element={<Escritorio />} />
+                                <Route path="/TicketApp/ingresar" element={<Ingresar />} />
+                                <Route path="/TicketApp/cola" element={<Cola />} />
+                                <Route path="/TicketApp/crear" element={<CrearTicket />} />
+                                <Route path="/TicketApp/escritorio" element={<Escritorio />} />
 
                                 {/* Redirect to "/ingresar" if no route matches */}
                                 <Route path="/" element={<Navigate to="/TicketApp/ingresar" />} />
