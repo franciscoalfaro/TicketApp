@@ -1,24 +1,21 @@
-import React, { useContext } from 'react';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
-import { Layout, Menu, theme } from 'antd';
-import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Ingresar } from './Ingresar';
 import { Cola } from './Cola';
 import { CrearTicket } from './CrearTicket';
 import { Escritorio } from './Escritorio';
 import { UiContext } from '../context/UiContext';
+import { Layout, Menu } from 'antd';
+import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { useContext } from 'react';
 
 const { Content, Footer, Sider } = Layout;
 
 export const RouterPage = () => {
-    const {
-        token: { colorBgContainer },
-    } = theme.useToken();
-
+    const { token: { colorBgContainer } } = theme.useToken();
     const { ocultarMenu } = useContext(UiContext);
 
     return (
-        <Router>
+        <Router basename="/TicketApp">
             <Layout style={{ height: '100vh' }}>
                 <Sider collapsedWidth='0' breakpoint="md" hidden={ocultarMenu}>
                     <div className="demo-logo-vertical"></div>
@@ -42,9 +39,7 @@ export const RouterPage = () => {
                                 <Route path="/cola" element={<Cola />} />
                                 <Route path="/crear" element={<CrearTicket />} />
                                 <Route path="/escritorio" element={<Escritorio />} />
-
-                                {/* Redirect to "/ingresar" if no route matches */}
-                                <Route path="*" element={<Navigate to="/ingresar" replace />} />
+                                <Route path="/" element={<Navigate to="/ingresar" />} />
                             </Routes>
                         </div>
                     </Content>
