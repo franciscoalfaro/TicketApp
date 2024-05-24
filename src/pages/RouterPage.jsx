@@ -47,7 +47,7 @@ export const RouterPage = () => {
                                 <Route path="/TicketApp/escritorio" element={<Escritorio />} />
 
                                 {/* Redirect to "/ingresar" if no route matches */}
-                                <Route path="/" element={<Navigate to="/TicketApp/ingresar" />} />
+                                <Route path="/" element={<Navigate to="/ingresar" />} />
                             </Routes>
                         </div>
                     </Content>
