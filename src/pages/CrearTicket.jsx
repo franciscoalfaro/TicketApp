@@ -17,6 +17,7 @@ export const CrearTicket = () => {
   const [tickets, setTicket ]= useState(null)
 
   const nuevoTicket =()=>{
+    console.log('se solicito ticket')
     socket.emit('solicitar-ticket', null, (ticket)=>{
       
       setTicket(ticket)
