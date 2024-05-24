@@ -15,7 +15,7 @@ export const RouterPage = () => {
     const { ocultarMenu } = useContext(UiContext);
 
     return (
-        <Router basename="/TicketApp">
+        <Router>
             <Layout style={{ height: '100vh' }}>
                 <Sider collapsedWidth='0' breakpoint="md" hidden={ocultarMenu}>
                     <div className="demo-logo-vertical"></div>

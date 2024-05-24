@@ -13,7 +13,7 @@ export const CrearTicket = () => {
   useHideMenu(true)
 
   const {socket} = useContext(SocketContext)
-  console.log(socket)
+
   const [tickets, setTicket ]= useState(null)
 
   const nuevoTicket =()=>{
