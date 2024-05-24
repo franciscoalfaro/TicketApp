@@ -17,7 +17,7 @@ export const Ingresar = () => {
     const navigate = useNavigate();
 
     const onFinish = ({agente, escritorio}) => {
-        navigate('/escritorio')
+        navigate('/TicketApp/escritorio')
 
         localStorage.setItem('agente', agente)
         localStorage.setItem('escritorio', escritorio)
@@ -27,7 +27,7 @@ export const Ingresar = () => {
     };
 
     if(usuario.agente || usuario.escritorio){
-        navigate('/escritorio')
+        navigate('/TicketApp/escritorio')
     }
 
     return (

@@ -26,13 +26,13 @@ export const RouterPage = () => {
                     <div className="demo-logo-vertical"></div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1" icon={<UserOutlined />}>
-                            <Link to="TicketApp/ingresar">Ingresar</Link>
+                            <Link to="/TicketApp/ingresar">Ingresar</Link>
                         </Menu.Item>
                         <Menu.Item key="2" icon={<UploadOutlined />}>
-                            <Link to="TicketApp/crear">Crear Ticket</Link>
+                            <Link to="/TicketApp/crear">Crear Ticket</Link>
                         </Menu.Item>
                         <Menu.Item key="3" icon={<VideoCameraOutlined />}>
-                            <Link to="TicketApp/cola">Cola Ticket</Link>
+                            <Link to="/TicketApp/cola">Cola Ticket</Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>
@@ -47,7 +47,7 @@ export const RouterPage = () => {
                                 <Route path="TicketApp/escritorio" element={<Escritorio />} />
 
                                 {/* Redirect to "/ingresar" if no route matches */}
-                                <Route path="/" element={<Navigate to="/ingresar" />} />
+                                <Route path="/" element={<Navigate to="/TicketApp/ingresar" />} />
                             </Routes>
                         </div>
                     </Content>
