@@ -2,7 +2,10 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { io } from 'socket.io-client';
 
-const sockets = io('/');
+const sockets = io('https://franalfaro.ddns.net', {
+  path: '/serverTicket/socket.io',
+  transports: ['websocket', 'polling'], // Agregar esto para soportar múltiples métodos de transporte.
+});
 
 export const useSocket  = ()=>{
 
