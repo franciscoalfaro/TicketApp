@@ -21,13 +21,13 @@ export const RouterPage = () => {
                     <div className="demo-logo-vertical"></div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1" icon={<UserOutlined />}>
-                            <Link to="/ingresar">Ingresar</Link>
+                            <Link to="/TicketApp/ingresar">Ingresar</Link>
                         </Menu.Item>
                         <Menu.Item key="2" icon={<UploadOutlined />}>
-                            <Link to="/crear">Crear Ticket</Link>
+                            <Link to="/TicketApp/crear">Crear Ticket</Link>
                         </Menu.Item>
                         <Menu.Item key="3" icon={<VideoCameraOutlined />}>
-                            <Link to="/cola">Cola Ticket</Link>
+                            <Link to="/TicketApp/cola">Cola Ticket</Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>
@@ -35,11 +35,11 @@ export const RouterPage = () => {
                     <Content style={{ margin: '24px 16px 0' }}>
                         <div style={{ padding: 24, minHeight: 360, background: colorBgContainer }}>
                             <Routes>
-                                <Route path="/ingresar" element={<Ingresar />} />
-                                <Route path="/cola" element={<Cola />} />
-                                <Route path="/crear" element={<CrearTicket />} />
-                                <Route path="/escritorio" element={<Escritorio />} />
-                                <Route path="/" element={<Navigate to="/ingresar" />} />
+                                <Route path="/TicketApp/ingresar" element={<Ingresar />} />
+                                <Route path="/TicketApp/cola" element={<Cola />} />
+                                <Route path="/TicketApp/crear" element={<CrearTicket />} />
+                                <Route path="/TicketApp/escritorio" element={<Escritorio />} />
+                                <Route path="/TicketApp/ingresar" element={<Navigate to="/ingresar" />} />
                             </Routes>
                         </div>
                     </Content>
