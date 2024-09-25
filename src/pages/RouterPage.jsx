@@ -21,7 +21,7 @@ export const RouterPage = () => {
                     <div className="demo-logo-vertical"></div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1" icon={<UserOutlined />}>
-                            <Link to="/ingresar">Ingresar</Link>
+                            <Link to="ingresar">Ingresar</Link>
                         </Menu.Item>
                         <Menu.Item key="2" icon={<UploadOutlined />}>
                             <Link to="/crear">Crear Ticket</Link>
