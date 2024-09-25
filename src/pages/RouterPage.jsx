@@ -46,6 +46,7 @@ export const RouterPage = () => {
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
                         Ant Design ©2023 Created by Ant UED
+                        <p>Atencion de ticket &copy; {new Date().getFullYear()} - Todos los derechos reservados</p>
                     </Footer>
                 </Layout>
             </Layout>
